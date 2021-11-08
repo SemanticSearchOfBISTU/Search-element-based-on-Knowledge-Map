@@ -1,0 +1,53 @@
+我：
+指导内容：进行简单的两篇论文的相似度匹配（用字符串匹配实现，比较简单）
+
+研究进度：完成了简单的用字符串匹配实现论文相似度的代码
+
+实践中出现的问题以及调整方式：
+问题：过于纠结具体代码的逻辑原理，想用更高级的潜在语义算法进一步实现，对nltk的了解不够，停用词，词干化这种有一些问题，由于数组格式，
+list格式等暂时无法使用nltk提供的函数解决停用词等小问题，进度慢。
+调整方式：多学习一下numpy，字符串，元组，list，dict
+
+代码问题：不知道如何获取文件，并且将它分组；分词问题用函数解决
+解决：txt_path = './a1.txt'	# txt文本路径
+f = open(txt_path,encoding='utf-8')
+data_lists = f.readlines()	#读出的是str类型
+dataset= []
+# 对每一行作循环
+for data in data_lists:
+    data1 = data.strip('\n')	# 去掉开头和结尾的换行符
+    dataset.append(data1)	# 把这一行的结果作为元素加入列表dataset
+dataset1 = np.array(dataset)
+
+分词：
+split()#默认分词
+
+亚可
+===指导内容====
+-尝试基于flask做一个服务API，可以试试DSSM等文本匹配模型，部署在服务器
+-尝试基于词库生成知识三元组，存在arangodb中，之后就可以做相似度了
+===研究进度===
+-在服务器上部署arangodb3,给小组成员创建userid，小组成员都会登陆并查看数据库
+-使用tensorboard部署加载上周训练的语义分类模型，并成功用flask将模型包装成一个网站，网站能实现用户输入文本，返回模型的预测结果
+===问题以及调整方式===
+null
+===具体问题===
+
+不能连接到服务器上的arangodb：因为配置文件没有修改：https://blog.csdn.net/ai_0922/article/details/103744782
+
+使用flask部署机器学习模型：https://blog.csdn.net/fendouaini/article/details/107232860?utm_term=tensorflow%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2flask&utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~sobaiduweb~default-0-107232860&spm=3001.4430
+
+薛：
+暂时搁置：
+词库 两个词，三个词，四个词的术语
+词库放到es中
+
+接下来要做的事：
+跑通老师交给我的文件
+论文信息总结json文件
+
+指导内容：进行了json分类目录以及论文信息归纳的指导
+研究进度：将json文件进行了总结
+实践中出现的问题以及调整方式：
+问题:es没搭建好导致词库无法导入，类别目录理解有问题，不能让python文件在pycharm上运行
+调整方式：下一步会运行代码，分析应该如何实现论文的信息归纳，将目录下缺少的txt文件进行补全
