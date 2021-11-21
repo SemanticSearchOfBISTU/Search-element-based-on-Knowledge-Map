@@ -1,0 +1,63 @@
+王子健：
+===指导内容====
+	寻找JCR学科分类目录；
+                实现两个文本学科匹配
+	
+===研究进度===
+	ES和Kibana安装完毕可以使用，找到了中国图书馆分类法第五版，实现本地API接口
+	
+===问题以及调整方式===
+	JCR资料方向搞错，重新调整寻找学科目录
+
+===具体问题===
+1.https://www.cnblogs.com/dw3306/p/14037808.html(es安装报错问题，一些解决方法)
+2.https://www.cnblogs.com/tyhj-zxp/p/13166671.html(kibana安装报错问题)
+
+
+薛冠文：
+===指导内容====
+-运行Semantic-Textual-Similarity-master文件，了解模型构成
+-对sci论文进行解析，建库将pdf解析成json文件后存到es中
+-创建一个特定的路径给用户
+-之后会提供几个爬虫包来了解爬虫方法
+===研究进度===
+-为了爬取目录，在网上进行了爬虫联系，试验爬取了豆瓣电影等例子
+===问题以及调整方式===
+论文匹配打标签没有成功
+爬虫未能将目录成功爬取下来
+调整方式：多了解模型结构，加快数据爬取的进度
+阅读“基于表示学习的论文分类方法研究”，“核心期刊评价的分学科方法解析”等文章
+实现爬虫把sci的类目爬取下来，下一步要看下发的爬虫包来学习爬虫，尽快把目录爬出来
+
+===具体问题===
+目录门类链接
+https://www.sciencedirect.com/browse/journals-and-books?subject=mathematics
+
+
+
+王亚可：
+===指导内容====
+	·练习拿到springer的英文期刊分类爬取；
+	·准备处理对应的英文词库；
+	
+===研究进度===
+	·根据字符匹配对中文词库进行处理，根据匹配的三元组生成相应格式的csv文件，存到arangodb中，能够以图的方式进行展示；
+	·将一个文本匹配API部署到服务器上，并实现本地程序调用，获得服务器处理后生成的json文件。
+	
+===问题以及调整方式===
+	·爬取springer的英文期刊分类只是看了看，没有进行爬取。	：下周开始尝试。
+	·论文资料没有看。	：每周都要看，有些收获。
+
+===具体问题===
+
+生成项目的requirements.txt文件：
+https://www.cnblogs.com/wintest/p/12813246.html
+
+图数据库：
+https://blog.csdn.net/u011119840/article/details/87856235
+
+向arangodb中导入文件生成graph：
+https://blog.csdn.net/u011119840/article/details/87856235
+
+API：
+https://www.zhangshengrong.com/p/JKN8Bv4D16/
