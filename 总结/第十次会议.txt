@@ -1,0 +1,54 @@
+王子健
+===指导内容====
+1.基于进行tensorflow安装和配置
+2.了解爬虫
+3.继续练习es基础语法
+===研究进度===
+1.es基本操作在python中实现，使用python代替kibana
+2.Microsoft C++安装
+===问题以及调整方式===
+第三方安装包由于在pycharm无法随意引进，需要安装Microsoft C++，但是官方的安装包有缺失无法安装
+爬虫代码没有完全搞懂
+调整方式：
+下载镜像完成安装，学习爬虫代码
+===具体问题===
+https://blog.csdn.net/qq_39620483/article/details/85202582(获取网页源码)
+https://blog.csdn.net/qq_40900196/article/details/102855875(AttributeError: module ‘tensorflow‘ has no attribute ‘random‘)
+https://www.lfd.uci.edu/~gohlke/pythonlibs/(一些第三方包)
+
+薛冠文
+===指导内容====
+-加快进度，完善isc论文抽取的程序
+-给抽取出来的文件添加keywords，创建作者list，创建者list，生产者list
+存储进es中
+-整理资料，制作ppt准备答辩
+===研究进度===
+-使用PyPDF2进行了pdf论文的批量信息抽取并且进行了进一步的整理
+-利用ocr技术实现将图片转化成txt数据
+===问题以及调整方式===
+-抽取出的数据信息的量还不够
+调整方式：
+-想方法添加数据组
+===具体问题===
+Python的文本数据提取extract()及正则表达式
+https://blog.csdn.net/m0_46352099/article/details/107787199
+https://www.paddlepaddle.org.cn/tutorials/projectdetail/1990733
+
+
+王亚可
+-----指导内容-----
+  继续研究关系抽取，多去尝试，多理解现有的模型代码逻辑。
+-----研究进度-----
+  学习openNRE的项目结构，尝试了解模型训练的数据集；
+  学习了测试模型的一些概念，AUC，F1-micro 与 F1-macro区别和计算原理；
+-----问题以及调整-----
+
+   想要调用测试训练好的模型，infer的时候遇到困难   ->  多看看openNRE模型原有的测试代码逻辑。
+
+-----链接-----
+
+AUC讲解：
+https://blog.csdn.net/linjunyu1994/article/details/100830799?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-1-100830799.pc_agg_new_rank&utm_term=%E6%A8%A1%E5%9E%8B%E4%B8%AD%E7%9A%84auc&spm=1000.2123.3001.4430
+F1-micro 与 F1-macro区别和计算原理：
+https://www.cnblogs.com/techengin/p/8962024.html
+
