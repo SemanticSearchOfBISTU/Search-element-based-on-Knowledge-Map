@@ -1,0 +1,5 @@
+elasticsearch==7.15.1
+Flask==0.12.2
+nltk==3.2.4
+numpy==1.16.4
+requests==2.25.1
