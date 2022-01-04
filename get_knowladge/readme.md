@@ -1,2 +1,3 @@
 	-main.py 是根据词库，依据字符匹配生成三元组的代码。
+	-requirements.txt 是代码运行所需要的环境
 	-litlemegerword是字库的小样本展示
