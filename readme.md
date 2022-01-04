@@ -1,4 +1,4 @@
-/extract  -- 知识工程内容
+/extract  -- 数据工程内容
 
 /matching  -- 语义相似度算法内容
 
