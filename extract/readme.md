@@ -1,0 +1,3 @@
+pdfssr：使用pdfplumber进行数据抽取
+pdf：使用pypdf2进行数据抽取
+test：使用paddleocr轻量模型进行数据转换
